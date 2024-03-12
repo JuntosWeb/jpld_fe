@@ -1,0 +1,228 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-image: url('./assets/images/homepage/Portada.png'); /* Reemplaza con la ruta correcta de tu imagen */
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  margin-top: 5px;
+  & img{
+    width: 30%;
+    margin-bottom: 35px;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.break-line .col-md-4:nth-child(1n+1){
+  clear: left;
+}
+.footerLogo{
+  max-width: 35%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*Ajustes Imp Cards*/
+.fondoGeneral{
+  background-image: url(assets/images/recursos/fondoGeneral.png);
+}
+.fondoGeneralN{
+  background-image: url(assets/images/recursos/fondoNaranja.png);
+}
+.fondoGeneral, .fondoGeneralN {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+.PersonaContenedor{
+  position: relative;
+}
+.PersonaContenedor img:first-child {
+  border-radius: 50%;
+}
+.casosImagenCampania{
+  /* background-image: url(assets/images/recursos/casosFondo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left; */
+  /* position: relative; */
+  bottom: 0;
+  max-width: 15%;
+  z-index: 0;
+}
+.paddingSection{
+  padding: 4%;
+  /* width: 100%; */
+  text-align: center;
+  z-index: 99;
+  position: relative;
+  & h1{
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #bd9314;
+    font-weight: 500;
+  }
+}
+.paddingSection .card, .col-3{
+box-sizing: content-box!important;
+}
+.paddingSection .card{
+margin: 5px;
+}
+.customWidht{
+  max-width: 80%;
+  text-align: center;
+}
+.nombreCampania{
+  /* color: white; */
+  color:#FD8204;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.1em;
+  text-shadow: -7px 1px 0px rgba(10, 53, 228, 0.6);
+}
+.personaText{
+  font-size: 28px;
+  color: white;
+  font-weight: 400;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 39%);
+  border-radius: 5px;
+  padding: 30px;
+}
+.btn-lger{
+  min-width: 250px;
+  font-size: 30px;
+}
+.recaudacion{
+  font-size: 38px;
+  /* color: white; */
+  color: #FD8204;
+  font-weight: 400;
+  & .mbText{
+    margin-bottom: 1.2em;
+  }
+  & .maxImgW{
+    max-width: 55%;
+  }
+}
+.contactoInfo {
+  font-size: 25px;
+  /* color: #FD8204; */
+  color: white;
+  font-weight: 400;
+  text-align: left!important;
+}
+.hImage{
+  display: none;
+}
+.sImage{
+  display: inline-block;
+}
+/*Ajustes Imp Cards*/
+
+@media screen and (max-width: 900px){
+  .App-header {
+    background-color: #282c34;
+    min-height: 0vh;
+    padding: 2em 0;
+    width: 100%;
+    height: 0px;
+    height: auto;
+    background-image: url('./assets/images/homepage/Portada.png'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-attachment: scroll;
+    background-size: cover;
+    margin-top: 0px;
+    & img{
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
+  .navbar-expand{
+    flex-wrap: wrap;
+    padding: 10px 0 25px 0;
+  }
+  .casosImagenCampania{
+    max-width: 60%;
+  }
+  .nombreCampania{
+    font-size: 2.2em;
+    text-shadow: -4px 1px 0px rgba(10, 53, 228, 0.6);
+  }
+  .personaText{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+  }
+  .contactoInfo {
+    font-size: 25px;
+    color: white;
+    text-align: center!important;
+    & button{
+      margin-bottom: 10px;
+    }
+  }
+  .recaudacion{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    & .mbText{
+      margin-bottom: 1em;
+    }
+    & .maxImgW{
+      max-width: 45%;
+    }
+  }
+  .hImage{
+    display: inline-block;
+    margin: 20px 0;
+  }
+  .sImage{
+    display: none;
+  }
+  .footerLogo{
+    max-width: 65%;
+  }
+}

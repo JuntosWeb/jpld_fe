@@ -1,0 +1,1 @@
+export const API_URL = process.env.REACT_APP_API_ROUTE || 'http://localhost:3030';
